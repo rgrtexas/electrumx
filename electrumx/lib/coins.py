@@ -3300,3 +3300,26 @@ class GravityZeroCoin(ScryptMixin, Coin):
     RPC_PORT = 36442
     ESTIMATE_FEE = 0.01
     RELAY_FEE = 0.01
+    
+class Cryptoescudo(Coin):
+    NAME = "Cryptoescudo"
+    SHORTNAME = "CESC"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("28")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("1c")
+    GENESIS_HASH = ('070390081e6d136d5714b9395d83807d'
+                    '0b2859f98e49bb2fcd995467b6b65016')
+    TX_COUNT = 1687784
+    TX_COUNT_HEIGHT = 1308573
+    TX_PER_BLOCK = 1
+    RPC_PORT = 61142
+    REORG_LIMIT = 1000
+    PEERS = [
+        'electrum1.cryptoescudo.org t',
+        'electrum2.cryptoescudo.org t',
+        'electrumx1.cryptoescudo.eu s t',
+    ]
+    
