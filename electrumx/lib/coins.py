@@ -3317,4 +3317,9 @@ class Cryptoescudo(Coin):
     TX_PER_BLOCK = 1
     RPC_PORT = 61142
     REORG_LIMIT = 1000
-    
+    PEERS = [
+        'nelectrum1.cryptoescudo.pt s t',
+        'nelectrum2.cryptoescudo.pt s t',
+        'nelectrum3.cryptoescudo.pt s t',
+        'electrumx1.cryptoescudo.eu s t',
+    ]
